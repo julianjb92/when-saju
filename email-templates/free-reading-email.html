@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your WHEN Reading</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Georgia, 'Times New Roman', serif; background-color: #faf9f7; color: #2d2d2d;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #faf9f7; padding: 40px 20px;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+          
+          <!-- Header -->
+          <tr>
+            <td style="padding: 40px 40px 20px; text-align: center; border-bottom: 1px solid #f0ede8;">
+              <h1 style="margin: 0; font-size: 28px; font-weight: normal; letter-spacing: 3px; color: #1a1a1a;">WHEN</h1>
+              <p style="margin: 10px 0 0; font-size: 14px; color: #888; font-style: italic;">Your timing, revealed.</p>
+            </td>
+          </tr>
+
+          <!-- Greeting -->
+          <tr>
+            <td style="padding: 40px 40px 20px;">
+              <h2 style="margin: 0 0 10px; font-size: 24px; font-weight: normal; color: #1a1a1a;">Hello, {{userName}} 👋</h2>
+              <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #555;">Here's your timing preview based on the Korean Four Pillars tradition.</p>
+            </td>
+          </tr>
+
+          <!-- Phase Result Card -->
+          <tr>
+            <td style="padding: 0 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" style="background: linear-gradient(135deg, #f8f6f3 0%, #f0ede8 100%); border-radius: 12px; overflow: hidden;">
+                <tr>
+                  <td style="padding: 30px; text-align: center;">
+                    <p style="margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: #888;">Your Current Phase</p>
+                    <h3 style="margin: 0 0 15px; font-size: 28px; font-weight: normal; color: #4a5d4a;">{{phaseName}}</h3>
+                    <p style="margin: 0; font-size: 16px; color: #666; line-height: 1.5;">{{phaseDescription}}</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Element Balance -->
+          <tr>
+            <td style="padding: 30px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="text-align: center;">
+                    <p style="margin: 0 0 15px; font-size: 14px; color: #888;">Your Core Energy</p>
+                    <p style="margin: 0; font-size: 20px; color: #1a1a1a;">
+                      <span style="color: #4a5d4a; font-weight: bold;">{{dayMaster}}</span>
+                    </p>
+                    <p style="margin: 10px 0 0; font-size: 14px; color: #666;">
+                      Dominant: {{dominantElement}} · Zodiac: {{zodiac}}
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr>
+            <td style="padding: 0 40px;">
+              <hr style="border: none; border-top: 1px solid #f0ede8; margin: 0;">
+            </td>
+          </tr>
+
+          <!-- Teaser Section -->
+          <tr>
+            <td style="padding: 40px; text-align: center;">
+              <p style="margin: 0 0 5px; font-size: 24px;">🔮</p>
+              <h3 style="margin: 0 0 15px; font-size: 22px; font-weight: normal; color: #1a1a1a;">This is just the beginning.</h3>
+              <p style="margin: 0 0 25px; font-size: 16px; line-height: 1.6; color: #555;">
+                What you just saw is a <strong>glimpse</strong> of your timing map.<br>
+                Your full reading reveals <strong>8 life areas</strong> in depth:
+              </p>
+              
+              <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 25px;">
+                <tr>
+                  <td width="50%" style="padding: 8px 0; font-size: 14px; color: #666;">💰 Money & Opportunities</td>
+                  <td width="50%" style="padding: 8px 0; font-size: 14px; color: #666;">💼 Career & Direction</td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px 0; font-size: 14px; color: #666;">❤️ Love & Emotional Timing</td>
+                  <td style="padding: 8px 0; font-size: 14px; color: #666;">⚡ Energy & Well-being</td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px 0; font-size: 14px; color: #666;">🌊 When Life Feels Heavy</td>
+                  <td style="padding: 8px 0; font-size: 14px; color: #666;">📅 Monthly Timing Map</td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px 0; font-size: 14px; color: #666;">⭐ This Year's Core Theme</td>
+                  <td style="padding: 8px 0; font-size: 14px; color: #666;">🧬 Your Life Pattern</td>
+                </tr>
+              </table>
+
+              <p style="margin: 0 0 25px; font-size: 15px; color: #888; font-style: italic;">
+                For less than the price of two lattes ☕☕
+              </p>
+            </td>
+          </tr>
+
+          <!-- CTA Button -->
+          <tr>
+            <td style="padding: 0 40px 40px; text-align: center;">
+              <a href="{{upgradeUrl}}" style="display: inline-block; background: linear-gradient(135deg, #4a5d4a 0%, #3a4d3a 100%); color: #ffffff; text-decoration: none; padding: 18px 40px; border-radius: 8px; font-size: 16px; font-weight: bold;">
+                Unlock Full Reading — $19.99
+              </a>
+              <p style="margin: 15px 0 0; font-size: 13px; color: #aaa;">
+                30-day money-back guarantee · Instant access
+              </p>
+            </td>
+          </tr>
+
+          <!-- Social Proof -->
+          <tr>
+            <td style="padding: 30px 40px; background-color: #f8f6f3; text-align: center;">
+              <p style="margin: 0; font-size: 14px; color: #888;">
+                "I was skeptical, but the insights were surprisingly accurate." — Sarah K.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 30px 40px; text-align: center; border-top: 1px solid #f0ede8;">
+              <p style="margin: 0 0 10px; font-size: 12px; color: #aaa;">
+                © 2026 WHEN · Not predictions. Perspective.
+              </p>
+              <p style="margin: 0; font-size: 11px; color: #ccc;">
+                You received this email because you requested a timing reading.
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -9,11 +9,20 @@
     "test": "npx tsx test/test-saju.ts",
     "dev": "tsc --watch"
   },
-  "keywords": ["saju", "four-pillars", "korean", "fortune", "timing"],
+  "keywords": [
+    "saju",
+    "four-pillars",
+    "korean",
+    "fortune",
+    "timing"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^5.3.0",
-    "tsx": "^4.7.0"
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "@fullstackfamily/manseryeok": "^1.0.5"
   }
 }
